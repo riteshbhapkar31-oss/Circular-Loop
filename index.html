@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Circular Loop — a marketplace for college students to buy and sell pre-loved items.">
+  <title>Circular Loop | Campus Marketplace</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="#">Circular<span>Loop.</span></a>
+    <nav>
+      <a href="#marketplace">Explore</a>
+      <a href="#about">About</a>
+    </nav>
+    <a class="sell-button" href="#marketplace">Explore items ↗</a>
+  </header>
+
+  <main>
+    <section class="hero" id="about">
+      <p class="eyebrow">♻ THE STUDENT MARKETPLACE</p>
+      <h1>Good things deserve<br>another <span>round.</span></h1>
+      <p class="hero-text">
+        Buy, sell, and pass it on. Find affordable essentials
+        from students in your campus community.
+      </p>
+      <a class="primary-button" href="#marketplace">Explore marketplace →</a>
+      <p class="hero-note">Your Campus. Reuse. Resell. Repeat.</p>
+    </section>
+
+    <section class="marketplace" id="marketplace">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">THE MARKETPLACE</p>
+          <h2>Find your next favourite.</h2>
+        </div>
+        <span id="result-count">0 items</span>
+      </div>
+
+      <label class="search-box">
+        <span>⌕</span>
+        <input id="search-input" type="search"
+          placeholder="Search books, calculators, cycles...">
+      </label>
+
+      <div class="filters" id="category-filters">
+        <button class="filter active" data-category="All">All items</button>
+        <button class="filter" data-category="Books">Books</button>
+        <button class="filter" data-category="Electronics">Electronics</button>
+        <button class="filter" data-category="Calculators">Calculators</button>
+        <button class="filter" data-category="Cycles">Cycles</button>
+        <button class="filter" data-category="Furniture">Furniture</button>
+        <button class="filter" data-category="Hostel Essentials">Hostel essentials</button>
+      </div>
+
+      <div class="product-grid" id="product-grid"></div>
+      <p class="empty-state" id="empty-state" hidden>
+        No items found. Try another search.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <a class="logo" href="#">Circular<span>Loop.</span></a>
+    <p>Less waste. More value. Better campus living.</p>
+    <p class="copyright">© 2026 Circular Loop · Student project</p>
+  </footer>
+</body>
+</html>
